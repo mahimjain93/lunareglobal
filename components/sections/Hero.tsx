@@ -1,3 +1,5 @@
+import { copy } from "@/lib/site";
+
 export default function Hero() {
   return (
     <section
@@ -6,13 +8,12 @@ export default function Hero() {
       className="relative flex min-h-svh flex-col justify-center px-6 pt-28 pb-[30svh] md:px-10 md:pb-[34svh] lg:px-14"
     >
       <div data-hero className="mx-auto w-full max-w-[1440px] text-center">
-        <p className="eyebrow mb-8">Paid media execution partner</p>
+        <p className="eyebrow mb-8">{copy.hero.eyebrow}</p>
         <h1 id="hero-title" className="display mx-auto max-w-[15ch] text-[2.9rem] text-ink sm:text-6xl md:text-7xl lg:text-[5.75rem]">
           Great strategy deserves <em className="text-silver italic">precise</em> execution.
         </h1>
         <p className="lede mx-auto mt-8 max-w-[34rem] text-[0.98rem] md:text-[1.06rem]">
-          Lunare Global plugs into in-house performance and growth teams to build, optimise and maintain paid media
-          with operational discipline — across every platform and market you run.
+          {copy.hero.lede}
         </p>
         <div className="mt-11 flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-10">
           <a href="#contact" className="btn">

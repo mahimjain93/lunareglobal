@@ -1,4 +1,4 @@
-import { mailtoHref, site } from "@/lib/site";
+import { copy, mailtoHref, site } from "@/lib/site";
 
 export default function Contact() {
   return (
@@ -10,11 +10,10 @@ export default function Contact() {
       <div className="mx-auto w-full max-w-[1440px] text-center">
         <p data-reveal className="eyebrow mb-7">05 — Contact</p>
         <h2 id="contact-title" data-reveal className="display mx-auto max-w-[18ch] text-[2.5rem] text-ink md:text-6xl lg:text-[4.25rem]">
-          Bring precision to your paid media.
+          {copy.contact.title}
         </h2>
         <p data-reveal className="lede mx-auto mt-7 max-w-[32rem] text-[1rem]">
-          Tell us how your programme runs today — platforms, markets, team — and where execution is getting in the
-          way.
+          {copy.contact.body}
         </p>
         <div data-reveal className="mt-11 flex flex-col items-center gap-6">
           <a href={mailtoHref()} className="btn">

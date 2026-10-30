@@ -1,4 +1,4 @@
-import { process } from "@/lib/site";
+import { copy, process } from "@/lib/site";
 import SectionHeader from "./SectionHeader";
 
 export default function Process() {
@@ -8,11 +8,10 @@ export default function Process() {
         <div className="max-w-[40rem] text-shadow-soft">
           <SectionHeader index="03" label="How we work" />
           <h2 id="process-title" data-reveal className="display text-[2.4rem] text-ink md:text-6xl">
-            Built to plug in, not take over.
+            {copy.process.title}
           </h2>
           <p data-reveal className="lede mt-8 text-[1.02rem]">
-            We fit around the way your team already works — and bring the structure that keeps execution consistent
-            from one week, platform and market to the next.
+            {copy.process.intro}
           </p>
 
           <div className="relative mt-16 md:mt-20">

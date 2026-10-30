@@ -17,6 +17,41 @@ export const site = {
   },
 };
 
+/** Section copy shared by the page, /llms.txt and structured data. */
+export const copy = {
+  hero: {
+    eyebrow: "Paid media execution partner",
+    lede: "Lunare Global plugs into in-house performance and growth teams to build, optimise and maintain paid media with operational discipline — across every platform and market you run.",
+  },
+  about: {
+    title: "Not an agency. An extension of your team.",
+    body: "Lunare Global is built specifically for paid media operations. We don’t replace your in-house team or your strategy — we strengthen the execution layer beneath it, so campaigns are built cleanly, optimised consistently and reported accurately.",
+    quote: "Strong strategy too often fails on weak execution.",
+  },
+  founder: {
+    name: "Sanjana Morris",
+    bio: "a paid media operator with deep experience in campaign execution, account structure and cross-platform performance environments",
+    mission: "to restore precision and accountability to paid media delivery",
+  },
+  services: {
+    title: "The execution layer, owned.",
+    intro: "Four disciplines, focused on one outcome: paid media that runs exactly as your strategy intends.",
+  },
+  process: {
+    title: "Built to plug in, not take over.",
+    intro: "We fit around the way your team already works — and bring the structure that keeps execution consistent from one week, platform and market to the next.",
+  },
+  why: {
+    title: "Built for teams that take execution seriously.",
+  },
+  audience:
+    "Teams with an in-house performance or growth function, running paid media across multiple platforms and markets — where execution quality directly affects reporting and decisions.",
+  contact: {
+    title: "Bring precision to your paid media.",
+    body: "Tell us how your programme runs today — platforms, markets, team — and where execution is getting in the way.",
+  },
+};
+
 export const nav = [
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },

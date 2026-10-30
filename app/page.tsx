@@ -8,18 +8,9 @@ import Services from "@/components/sections/Services";
 import Process from "@/components/sections/Process";
 import Why from "@/components/sections/Why";
 import Contact from "@/components/sections/Contact";
-import { site } from "@/lib/site";
+import { structuredData } from "@/lib/structured-data";
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: site.name,
-  url: site.url,
-  description: site.description,
-  email: site.contact.email,
-  founder: { "@type": "Person", name: "Sanjana Morris" },
-  knowsAbout: ["Paid media", "Campaign setup", "Campaign optimisation", "Paid media reporting"],
-};
+const jsonLd = structuredData();
 
 export default function Home() {
   return (

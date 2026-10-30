@@ -10,7 +10,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: `${site.name} — Paid media execution partner`,
   description: site.description,
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    // Plain-markdown version of the site for LLMs (llmstxt.org).
+    types: { "text/markdown": "/llms.txt" },
+  },
   openGraph: {
     type: "website",
     url: site.url,

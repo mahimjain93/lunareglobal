@@ -1,4 +1,4 @@
-import { services } from "@/lib/site";
+import { copy, services } from "@/lib/site";
 import SectionHeader from "./SectionHeader";
 
 export default function Services() {
@@ -8,10 +8,10 @@ export default function Services() {
         <div className="max-w-[40rem] text-shadow-soft">
           <SectionHeader index="02" label="Services" />
           <h2 id="services-title" data-reveal className="display text-[2.4rem] text-ink md:text-6xl">
-            The execution layer, owned.
+            {copy.services.title}
           </h2>
           <p data-reveal className="lede mt-8 max-w-[34rem] text-[1.02rem]">
-            Four disciplines, focused on one outcome: paid media that runs exactly as your strategy intends.
+            {copy.services.intro}
           </p>
 
           <ol data-reveal-group className="mt-16 border-t border-line md:mt-20">

@@ -1,4 +1,4 @@
-import { differentiators } from "@/lib/site";
+import { copy, differentiators } from "@/lib/site";
 import SectionHeader from "./SectionHeader";
 
 export default function Why() {
@@ -8,7 +8,7 @@ export default function Why() {
         <div className="max-w-[42rem] text-shadow-soft">
           <SectionHeader index="04" label="Why Lunare" />
           <h2 id="why-title" data-reveal className="display text-[2.4rem] text-ink md:text-6xl">
-            Built for teams that take execution seriously.
+            {copy.why.title}
           </h2>
 
           <dl data-reveal-group className="mt-16 grid gap-x-12 gap-y-12 sm:grid-cols-2 md:mt-20">
@@ -23,8 +23,7 @@ export default function Why() {
           <div data-reveal className="mt-20 max-w-[36rem]">
             <p className="eyebrow mb-4">Who we work with</p>
             <p className="lede text-[1.02rem]">
-              Teams with an in-house performance or growth function, running paid media across multiple platforms and
-              markets — where execution quality directly affects reporting and decisions.
+              {copy.audience}
             </p>
           </div>
         </div>

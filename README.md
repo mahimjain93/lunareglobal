@@ -70,3 +70,11 @@ convert moon-master.png -resize 1000x1000 -quality 84 public/moon/moon-1000.webp
 ```
 
 To use a photograph instead, such as NASA LRO imagery, which is public domain, drop a square PNG with transparency into `public/moon/` under the same names.
+
+## Search & LLM crawlability
+
+- All copy is server-rendered static HTML, so crawlers that don't run JavaScript still see every section. Animations only enhance content that is already there.
+- `/llms.txt` and `/llms-full.txt` (see [llmstxt.org](https://llmstxt.org)) are generated from `lib/site.ts`. The page links to them with `<link rel="alternate" type="text/markdown">`.
+- `robots.txt` allows all crawlers and names the major AI crawlers explicitly, including GPTBot, ClaudeBot, PerplexityBot and Google-Extended.
+- JSON-LD (`lib/structured-data.ts`) describes the business as a `ProfessionalService` with its founder, audience and an `OfferCatalog` of the four services. It also includes `WebSite` and `WebPage` entries.
+- To change any copy, edit `copy`, `services`, `process` or `differentiators` in `lib/site.ts`. The page, the llms files and the structured data all update together.
