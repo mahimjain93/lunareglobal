@@ -17,7 +17,7 @@ export default function Services() {
           <ol data-reveal-group className="mt-16 border-t border-line md:mt-20">
             {services.map((s, i) => (
               <li key={s.title} className="group grid grid-cols-[3rem_1fr] gap-x-4 border-b border-line py-9 md:grid-cols-[4.5rem_1fr] md:py-11">
-                <span className="font-display pt-1 text-base text-mist tabular-nums">
+                <span className="font-display pt-1 text-base text-gold tabular-nums">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <div>

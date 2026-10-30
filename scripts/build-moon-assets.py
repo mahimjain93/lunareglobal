@@ -31,11 +31,11 @@ for path, (size, quality) in OUT.items():
     moon.resize((size, size), Image.LANCZOS).save(path, "WEBP", quality=quality, alpha_quality=90, method=6)
 
 # Open Graph card: moon rising from the bottom edge of a midnight field.
-og = Image.new("RGB", (1200, 630), (4, 6, 11))
+og = Image.new("RGB", (1200, 630), (23, 26, 35))
 small = moon.resize((520, 520), Image.LANCZOS)
 og.paste(small, ((1200 - 520) // 2, 630 - 520 // 2 - 90), small)
 fade = Image.linear_gradient("L").resize((1200, 630))
-og = Image.composite(Image.new("RGB", (1200, 630), (4, 6, 11)), og, fade.point(lambda v: min(255, max(0, v - 170) * 3)))
+og = Image.composite(Image.new("RGB", (1200, 630), (23, 26, 35)), og, fade.point(lambda v: min(255, max(0, v - 170) * 3)))
 og.save(OG, "JPEG", quality=84, optimize=True)
 
 os.remove(master)

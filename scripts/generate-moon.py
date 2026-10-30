@@ -229,10 +229,8 @@ lum = 1 - np.exp(-lum * 1.75)
 lum = lum ** 1.12  # filmic-ish tone curve
 lum = np.clip(lum, 0, 1)
 
-tint = np.array([0.90, 0.93, 0.99])
+tint = np.array([0.95, 0.935, 0.91])  # champagne silver, to sit with the gold
 rgb = np.stack([lum * tint[0], lum * tint[1], lum * tint[2]], axis=-1)
-# cool the maria very slightly
-rgb[..., 2] += 0.02 * mare * lum
 rgb = np.clip(rgb, 0, 1)
 
 alpha = np.clip((1.0 - rr) * R / 1.5, 0, 1)

@@ -57,7 +57,7 @@ export default function Nav() {
             href="#contact"
             className="hidden text-[0.6875rem] font-medium tracking-[0.24em] text-ink uppercase lg:inline-flex lg:items-center lg:gap-3 group"
           >
-            <span className="h-px w-6 bg-silver/60 transition-all duration-500 group-hover:w-10" />
+            <span className="h-px w-6 bg-gold transition-all duration-500 group-hover:w-10" />
             Start a conversation
           </a>
 

@@ -24,7 +24,7 @@ export default function Starfield() {
   return (
     <svg className="stars" width="100%" height="100%" preserveAspectRatio="none">
       {STARS.map((s, i) => (
-        <circle key={i} cx={`${s.x}%`} cy={`${s.y}%`} r={s.r} fill="#dfe8f6" opacity={s.o} />
+        <circle key={i} cx={`${s.x}%`} cy={`${s.y}%`} r={s.r} fill="#f3ebe3" opacity={s.o} />
       ))}
     </svg>
   );

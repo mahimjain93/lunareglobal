@@ -15,7 +15,7 @@ export default function About() {
           </p>
 
           <figure data-reveal className="mt-16 border-l border-line pl-6 md:pl-8">
-            <blockquote className="font-display text-[1.45rem] leading-snug text-silver italic md:text-[1.7rem]">
+            <blockquote className="font-display text-[1.45rem] leading-snug text-gold-hi italic md:text-[1.7rem]">
               {copy.about.quote}
             </blockquote>
             <figcaption className="copy mt-6 text-[0.95rem]">

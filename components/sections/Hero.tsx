@@ -10,7 +10,7 @@ export default function Hero() {
       <div data-hero className="mx-auto w-full max-w-[1440px] text-center">
         <p className="eyebrow mb-8">{copy.hero.eyebrow}</p>
         <h1 id="hero-title" className="display mx-auto max-w-[15ch] text-[2.9rem] text-ink sm:text-6xl md:text-7xl lg:text-[5.75rem]">
-          Great strategy deserves <em className="text-silver italic">precise</em> execution.
+          Great strategy deserves <em className="text-gold-hi italic">precise</em> execution.
         </h1>
         <p className="lede mx-auto mt-8 max-w-[34rem] text-[0.98rem] md:text-[1.06rem]">
           {copy.hero.lede}
@@ -31,7 +31,7 @@ export default function Hero() {
         aria-label="Scroll to About"
       >
         <span className="eyebrow text-[0.625rem]">Scroll</span>
-        <span className="block h-10 w-px bg-gradient-to-b from-silver/60 to-transparent" />
+        <span className="block h-10 w-px bg-gradient-to-b from-gold/70 to-transparent" />
       </a>
     </section>
   );

@@ -205,8 +205,8 @@ export default function MoonStage() {
         <div className="moon-glow" />
         <svg className="orbit" viewBox="0 0 200 200" fill="none">
           <g className="orbit-spin">
-            <circle cx="100" cy="100" r="96" stroke="rgb(195 210 235 / 0.22)" strokeWidth="0.25" />
-            <circle cx="100" cy="100" r="88" stroke="rgb(195 210 235 / 0.10)" strokeWidth="0.2" strokeDasharray="0.6 2.4" />
+            <circle cx="100" cy="100" r="96" stroke="rgb(216 187 149 / 0.32)" strokeWidth="0.25" />
+            <circle cx="100" cy="100" r="88" stroke="rgb(216 187 149 / 0.14)" strokeWidth="0.2" strokeDasharray="0.6 2.4" />
             {Array.from({ length: 72 }, (_, i) => {
               const a = (i / 72) * Math.PI * 2;
               const long = i % 6 === 0;
@@ -218,13 +218,13 @@ export default function MoonStage() {
                   y1={(100 + Math.sin(a) * r1).toFixed(2)}
                   x2={(100 + Math.cos(a) * 96).toFixed(2)}
                   y2={(100 + Math.sin(a) * 96).toFixed(2)}
-                  stroke="rgb(195 210 235 / 0.35)"
+                  stroke="rgb(216 187 149 / 0.45)"
                   strokeWidth={long ? 0.3 : 0.18}
                 />
               );
             })}
-            <circle cx="196" cy="100" r="1.1" fill="#dfe8f6" />
-            <circle cx="12" cy="100" r="0.7" fill="rgb(223 232 246 / 0.6)" />
+            <circle cx="196" cy="100" r="1.1" fill="#d8bb95" />
+            <circle cx="12" cy="100" r="0.7" fill="rgb(216 187 149 / 0.6)" />
           </g>
         </svg>
         <img

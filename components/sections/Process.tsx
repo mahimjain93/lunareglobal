@@ -17,14 +17,14 @@ export default function Process() {
           <div className="relative mt-16 md:mt-20">
             {/* The track draws itself as you move through the steps. */}
             <span aria-hidden="true" className="absolute top-2 bottom-2 left-[5px] w-px bg-line" />
-            <span aria-hidden="true" data-draw className="absolute top-2 bottom-2 left-[5px] w-px origin-top bg-silver/70" />
+            <span aria-hidden="true" data-draw className="absolute top-2 bottom-2 left-[5px] w-px origin-top bg-gold" />
 
             <ol data-reveal-group className="space-y-14 md:space-y-16">
               {process.map((step, i) => (
                 <li key={step.title} className="relative pl-12 md:pl-16">
                   <span
                     aria-hidden="true"
-                    className="absolute top-[0.55rem] left-0 h-[11px] w-[11px] rounded-full border border-silver/70 bg-night"
+                    className="absolute top-[0.55rem] left-0 h-[11px] w-[11px] rounded-full border border-gold bg-night"
                   />
                   <p className="eyebrow mb-3">Step {String(i + 1).padStart(2, "0")}</p>
                   <h3 className="font-display text-[1.65rem] leading-tight text-ink md:text-[2rem]">{step.title}</h3>
