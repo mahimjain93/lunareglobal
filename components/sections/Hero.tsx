@@ -9,7 +9,7 @@ export default function Hero() {
     >
       <div data-hero className="mx-auto w-full max-w-[1440px] text-center">
         <p className="eyebrow mb-8">{copy.hero.eyebrow}</p>
-        <h1 id="hero-title" className="display mx-auto max-w-[15ch] text-[2.9rem] text-ink sm:text-6xl md:text-7xl lg:text-[5.75rem]">
+        <h1 id="hero-title" className="display mx-auto max-w-[15ch] text-[2.9rem] text-gold sm:text-6xl md:text-7xl lg:text-[5.75rem]">
           Great strategy deserves <em className="text-gold-hi italic">precise</em> execution.
         </h1>
         <p className="lede mx-auto mt-8 max-w-[34rem] text-[0.98rem] md:text-[1.06rem]">

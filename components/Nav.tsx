@@ -31,7 +31,7 @@ export default function Nav() {
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-[background-color,border-color,backdrop-filter] duration-700 ease-(--ease-lunar) ${
           scrolled && !open
-            ? "border-b border-line bg-night/55 backdrop-blur-md"
+            ? "border-b border-line bg-night/85 backdrop-blur-md"
             : "border-b border-transparent bg-transparent"
         }`}
       >

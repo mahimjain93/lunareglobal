@@ -28,20 +28,20 @@ type MoonState = {
 // Order matches the sections in the page: hero, about, services, process, why, contact.
 const DESKTOP: MoonState[] = [
   { x: 0.5, y: 1.0, scale: 0.95, opacity: 1, shade: 0.62, glow: 0.45, light: 0.25, horizon: 1, scrim: 0, orbit: 0 },
-  { x: 0.72, y: 0.58, scale: 0.98, opacity: 0.92, shade: 0.45, glow: 0.55, light: 0.45, horizon: 0, scrim: 0.6, orbit: 0 },
-  { x: 0.77, y: 0.52, scale: 1.16, opacity: 0.95, shade: 0.28, glow: 0.75, light: 0.7, horizon: 0, scrim: 1, orbit: 0 },
-  { x: 0.75, y: 0.5, scale: 1.0, opacity: 1, shade: 0.12, glow: 0.85, light: 0.8, horizon: 0, scrim: 1, orbit: 1 },
-  { x: 0.76, y: 0.5, scale: 1.04, opacity: 1, shade: 0, glow: 1, light: 1, horizon: 0, scrim: 1, orbit: 0 },
-  { x: 0.5, y: 0.34, scale: 0.6, opacity: 1, shade: 0, glow: 1, light: 0.9, horizon: 0, scrim: 0, orbit: 0 },
+  { x: 0.72, y: 0.58, scale: 0.98, opacity: 0.92, shade: 0.45, glow: 0.55, light: 0.45, horizon: 0, scrim: 0, orbit: 0 },
+  { x: 0.77, y: 0.52, scale: 1.16, opacity: 0.95, shade: 0.28, glow: 0.75, light: 0.7, horizon: 0, scrim: 0, orbit: 0 },
+  { x: 0.75, y: 0.5, scale: 1.0, opacity: 1, shade: 0.12, glow: 0.85, light: 0.8, horizon: 0, scrim: 0, orbit: 1 },
+  { x: 0.76, y: 0.5, scale: 1.04, opacity: 1, shade: 0, glow: 1, light: 1, horizon: 0, scrim: 0, orbit: 0 },
+  { x: 0.74, y: 0.5, scale: 0.92, opacity: 1, shade: 0, glow: 1, light: 0.9, horizon: 0, scrim: 0, orbit: 0 },
 ];
 
-// Below 1024px the moon stays centred and sits behind the copy, dimmed.
+// Below 1024px the moon stays centred and shows between the content panels.
 const MOBILE: MoonState[] = [
   { x: 0.5, y: 0.98, scale: 1.0, opacity: 1, shade: 0.6, glow: 0.45, light: 0.25, horizon: 1, scrim: 0, orbit: 0 },
-  { x: 0.5, y: 0.62, scale: 1.0, opacity: 0.5, shade: 0.55, glow: 0.5, light: 0.4, horizon: 0, scrim: 1, orbit: 0 },
-  { x: 0.5, y: 0.5, scale: 1.12, opacity: 0.4, shade: 0.3, glow: 0.65, light: 0.6, horizon: 0, scrim: 1, orbit: 0 },
-  { x: 0.5, y: 0.5, scale: 1.05, opacity: 0.4, shade: 0.15, glow: 0.75, light: 0.7, horizon: 0, scrim: 1, orbit: 0.6 },
-  { x: 0.5, y: 0.48, scale: 1.0, opacity: 0.45, shade: 0, glow: 0.9, light: 0.85, horizon: 0, scrim: 1, orbit: 0 },
+  { x: 0.5, y: 0.62, scale: 1.0, opacity: 0.8, shade: 0.55, glow: 0.5, light: 0.4, horizon: 0, scrim: 0.25, orbit: 0 },
+  { x: 0.5, y: 0.5, scale: 1.12, opacity: 0.8, shade: 0.3, glow: 0.65, light: 0.6, horizon: 0, scrim: 0.25, orbit: 0 },
+  { x: 0.5, y: 0.5, scale: 1.05, opacity: 0.8, shade: 0.15, glow: 0.75, light: 0.7, horizon: 0, scrim: 0.25, orbit: 0.6 },
+  { x: 0.5, y: 0.48, scale: 1.0, opacity: 0.8, shade: 0, glow: 0.9, light: 0.85, horizon: 0, scrim: 0.25, orbit: 0 },
   { x: 0.5, y: 0.2, scale: 0.5, opacity: 0.95, shade: 0, glow: 0.9, light: 0.8, horizon: 0, scrim: 0, orbit: 0 },
 ];
 

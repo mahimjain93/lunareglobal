@@ -247,6 +247,65 @@ body {
   background: linear-gradient(90deg, rgb(197 154 97 / 0.7), rgb(197 154 97 / 0.1));
 }
 
+/*
+ * Editorial panels. Text pairings from the brand palette:
+ * Midnight on Paper, and Walnut on Stone. Panels re-point the colour
+ * tokens, so everything inside picks up the pairing automatically.
+ */
+.panel {
+  position: relative;
+  margin-inline: -1.5rem;
+  padding: 3.5rem 1.5rem;
+  background: var(--color-night);
+  box-shadow: 0 50px 90px -50px rgb(0 0 0 / 0.75);
+}
+
+.panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  background: linear-gradient(90deg, #c59a61, rgb(197 154 97 / 0));
+}
+
+@media (min-width: 768px) {
+  .panel {
+    margin-inline: 0;
+    padding: 4rem 3.5rem 4.5rem;
+  }
+}
+
+.panel-paper {
+  --color-night: #f9f2f0; /* Moon Paper */
+  --color-ink: #2b2f3d; /* Midnight Ink */
+  --color-silver: #393a43; /* Wordmark Ink */
+  --color-mist: #5f5c63;
+  --color-dim: #7d777a;
+  --color-gold: #876637;
+  --color-gold-hi: #7a5a30;
+  --color-line: rgb(43 47 61 / 0.14);
+}
+
+.panel-stone {
+  --color-night: #d1c0b6; /* Warm Stone */
+  --color-ink: #2b201d; /* Walnut */
+  --color-silver: #3a2d29;
+  --color-mist: #4f413b;
+  --color-dim: #6a5a52;
+  --color-gold: #5c411d;
+  --color-gold-hi: #553c1a;
+  --color-line: rgb(43 32 29 / 0.18);
+}
+
+.panel .hairline {
+  background: linear-gradient(90deg, var(--color-gold), transparent);
+}
+
+.panel ::selection {
+  background: rgb(197 154 97 / 0.35);
+  color: inherit;
+}
+
 .text-shadow-soft {
   text-shadow: 0 1px 24px rgb(15 17 24 / 0.6);
 }

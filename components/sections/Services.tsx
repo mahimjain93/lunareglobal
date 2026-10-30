@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <section id="services" aria-labelledby="services-title" className="relative px-6 py-32 md:px-10 md:py-48 lg:px-14">
       <div className="mx-auto max-w-[1440px]">
-        <div className="max-w-[40rem] text-shadow-soft">
+        <div className="panel panel-stone max-w-[47rem]">
           <SectionHeader index="02" label="Services" />
           <h2 id="services-title" data-reveal className="display text-[2.4rem] text-ink md:text-6xl">
             {copy.services.title}

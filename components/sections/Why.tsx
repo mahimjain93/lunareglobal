@@ -5,7 +5,7 @@ export default function Why() {
   return (
     <section id="why" aria-labelledby="why-title" className="relative px-6 py-32 md:px-10 md:py-48 lg:px-14">
       <div className="mx-auto max-w-[1440px]">
-        <div className="max-w-[42rem] text-shadow-soft">
+        <div className="panel panel-stone max-w-[49rem]">
           <SectionHeader index="04" label="Why Lunare" />
           <h2 id="why-title" data-reveal className="display text-[2.4rem] text-ink md:text-6xl">
             {copy.why.title}
